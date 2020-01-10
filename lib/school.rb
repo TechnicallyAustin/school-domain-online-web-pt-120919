@@ -22,7 +22,7 @@ end
   end
   
   def sort 
-    @roster[grade].collect |a,b|
+    @roster[grade] = name.sort 
     a<=>b
   end
   
