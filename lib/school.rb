@@ -22,8 +22,8 @@ end
   end
   
   def sort 
-    @roster[grade] = name.sort 
-    a<=>b
+    @roster.each do |grade,name|
+      @roster[grade] = name.sort 
   end
   
   
