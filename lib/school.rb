@@ -10,10 +10,10 @@ class School
 
   def add_student(name, grade)
     if @roster.include?(grade) do 
-    @roster[grade] = []
     @roster[grade] << name
-    @roster = {grade => [name]}
-  else @roster[grade] = [name]
+    elsif roster.detect { |i| i != grade}
+    @roster[grade] = []
+    @roster[grade] << name 
 end
   end
     
