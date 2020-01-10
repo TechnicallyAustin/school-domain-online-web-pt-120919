@@ -6,14 +6,17 @@ class School
     @school = school
   end
   
-  def grade
 
   def add_student(name, grade)
-   
-    
-    
+    if @roster[:grade] != nil do
+    @roster[:grade] = [name]
+    @roster << {:grade => name}
+  end
+  
+  def sort 
     
   end
+  
   
   
 end
