@@ -12,10 +12,10 @@ class School
     if @roster.include?(grade) do
     @roster[:grade] = []
     @roster[:grade] << name
+    elsif unless @roster.include?(grade) do 
+      @roster[:grade] << name 
   end
-  @roster[:grade] << name 
-  end
-
+end
   
   def sort 
     
