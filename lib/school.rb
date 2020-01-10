@@ -9,9 +9,9 @@ class School
   
 
   def add_student(name, grade)
-    if @roster.include?(grade)
+    if @roster.include?(grade) == true 
     @roster[grade] << name
-    elsif roster.detect { |g_level,i| g_level != grade }
+    elsif @roster.include?(grade) == false 
     @roster[grade] = []
     @roster[grade] << name 
 end
