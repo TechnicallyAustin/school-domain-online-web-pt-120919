@@ -12,8 +12,8 @@ class School
     if @roster.include?(grade) do
     @roster[:grade] = []
     @roster[:grade] << name
-  else 
-    @roster = {:grade => name}
+  end
+  @roster = {:grade => name}
   end
 end
   
