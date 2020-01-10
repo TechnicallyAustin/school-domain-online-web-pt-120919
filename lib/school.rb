@@ -22,7 +22,7 @@ end
   end
   
   def sort 
-    
+    @roster[grade].sort(a-z)
   end
   
   
