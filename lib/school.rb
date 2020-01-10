@@ -13,9 +13,9 @@ class School
     @roster[:grade] = []
     @roster[:grade] << name
   end
-  @roster = {:grade => name}
+  @roster[:grade] << name 
   end
-end
+
   
   def sort 
     
