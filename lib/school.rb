@@ -1,4 +1,5 @@
 class School
+  attr_writer :grade 
   attr_accessor :grade_level, :name
   attr_reader :school, :roster
   def initialize(school)
@@ -8,15 +9,10 @@ class School
   
 
   def add_student(name, grade)
+    @roster[grade] = []
+    @roster[grade] << name
+    @roster => {grade => [name]}
     
-    if @roster.include?(grade) do
-    @roster = {:grade => []}
-    @roster[:grade] << name
-  end
-  @roster[:grade] << name 
-  end
-end
-  
   def sort 
     
   end
