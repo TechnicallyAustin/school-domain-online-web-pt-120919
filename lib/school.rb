@@ -5,14 +5,11 @@ class School
     @roster = {}
     @school = school
   end
+  
+  def grade
 
   def add_student(name, grade)
-    #adds a single student as a hash value with their grade level as a key 
-    student_array = []
-    student_array << self.name
-    @student_array = student_array
-    @roster[grade_level] = @student_array 
-    
+   
     
     
     
