@@ -11,7 +11,10 @@ class School
     if @roster[:grade] != nil do
     @roster[:grade] = [name]
     @roster << {:grade => name}
+  else 
+    @roster[:grade]
   end
+  
   
   def sort 
     
