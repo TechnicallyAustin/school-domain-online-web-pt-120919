@@ -11,7 +11,7 @@ class School
   def add_student(name, grade)
     if @roster.include?(grade)
     @roster[grade] << name
-    elsif roster.
+    elsif roster.detect { |g_level,i| g_level != grade }
     @roster[grade] = []
     @roster[grade] << name 
 end
